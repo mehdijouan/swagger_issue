@@ -22,7 +22,7 @@
    </properties>
 
    <modules>
-      <module>working</module>
-      <module>notworking</module>
+      <module>invalid_but_working</module>
+      <module>valid_but_not_working</module>
    </modules>
 </project>

@@ -1,6 +1,5 @@
 {
-   "$schema": "http://json-schema.org/draft-04/schema#",
-   "title": "Card Schema",
+   "$schema": "http://json-schema.org/draft-06/schema#",
    "description": "A representation of a person, company, organization, or place",
    "type": "object",
    "required": [
@@ -20,15 +19,7 @@
       "addresses": {
          "type": "array",
          "items": {
-            "$ref": "#/definitions/address"
-         }
-      }
-   },
-   "definitions": {
-      "address": {
-         "type": "object",
-         "properties": {
-            "$ref": "address.json"
+            "$ref": "./address.json"
          }
       }
    }
