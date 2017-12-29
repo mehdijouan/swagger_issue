@@ -1,0 +1,35 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "title": "Card Schema",
+   "description": "A representation of a person, company, organization, or place",
+   "type": "object",
+   "required": [
+      "familyName",
+      "givenName"
+   ],
+   "properties": {
+      "familyName": {
+         "type": "string"
+      },
+      "givenName": {
+         "type": "string"
+      },
+      "nickname": {
+         "type": "string"
+      },
+      "addresses": {
+         "type": "array",
+         "items": {
+            "$ref": "#/definitions/address"
+         }
+      }
+   },
+   "definitions": {
+      "address": {
+         "type": "object",
+         "properties": {
+            "$ref": "address.json"
+         }
+      }
+   }
+}

@@ -1,0 +1,26 @@
+{
+   "$schema": "http://json-schema.org/draft-06/schema#",
+   "description": "A representation of a person, company, organization, or place",
+   "type": "object",
+   "required": [
+      "familyName",
+      "givenName"
+   ],
+   "properties": {
+      "familyName": {
+         "type": "string"
+      },
+      "givenName": {
+         "type": "string"
+      },
+      "nickname": {
+         "type": "string"
+      },
+      "addresses": {
+         "type": "array",
+         "items": {
+            "$ref": "address.json"
+         }
+      }
+   }
+}
